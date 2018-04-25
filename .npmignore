@@ -1,5 +1,6 @@
 lib/
 dist/sample
+dist/test.js
 .editorconfig
 tsconfig.json
 tslint.json

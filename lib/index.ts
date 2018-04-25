@@ -41,7 +41,6 @@ export interface BetterMessageBoxOptions extends MessageBoxOptions {
 /**
 *  Shows a message box asynchronously and invokes the callback function with an instance of the button that was selected
 * 
-* @see Electron.Dialog.showMessageBox
 * @param window The window to attach to as as modal dialog
 * @param options The options
 * @param callback Callback when button is selected 
