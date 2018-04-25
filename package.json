@@ -1,0 +1,28 @@
+{
+  "name": "electron-better-dialog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc && electron ./dist/sample/index",
+    "lint": "tslint --project tslint.json -t stylish --fix",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JakeH/electron-better-dialog.git"
+  },
+  "author": "Jake Hickman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JakeH/electron-better-dialog/issues"
+  },
+  "homepage": "https://github.com/JakeH/electron-better-dialog#readme",
+  "devDependencies": {
+    "electron": "^1.8.4",
+    "tslint": "^5.9.1",
+    "typescript": "^2.8.3"
+  }
+}

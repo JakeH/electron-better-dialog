@@ -1,3 +1,6 @@
+# NPM package output
+dist/
+
 # Logs
 logs
 *.log
