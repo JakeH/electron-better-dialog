@@ -1,7 +1,7 @@
 {
   "name": "electron-better-dialog",
   "version": "1.0.0",
-  "description": "",
+  "description": "Wrapper for the Electron showMessageBox function which works with button objects instead of indexes",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
@@ -19,6 +19,13 @@
   "bugs": {
     "url": "https://github.com/JakeH/electron-better-dialog/issues"
   },
+  "keywords": [
+    "electron",
+    "dialog",
+    "message",
+    "messagebox",
+    "button"
+  ],
   "homepage": "https://github.com/JakeH/electron-better-dialog#readme",
   "devDependencies": {
     "electron": "^1.8.4",

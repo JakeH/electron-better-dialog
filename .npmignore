@@ -1,2 +1,5 @@
 lib/
 dist/sample
+.editorconfig
+tsconfig.json
+tslint.json
