@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/JakeH/electron-better-dialog.svg?branch=master)](https://travis-ci.org/JakeH/electron-better-dialog)
+[![Build Status](https://travis-ci.org/JakeH/electron-better-dialog.svg?branch=master)](https://travis-ci.org/JakeH/electron-better-dialog) [![Coverage Status](https://coveralls.io/repos/github/JakeH/electron-better-dialog/badge.svg?branch=master)](https://coveralls.io/github/JakeH/electron-better-dialog?branch=master)
 # electron-better-dialog
 > Wrapper for the Electron `showMessageBox` function which works with button objects instead of indexes.
 
