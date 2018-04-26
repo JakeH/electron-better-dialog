@@ -1,6 +1,8 @@
 lib/
 dist/sample
-dist/test.js
+dist/test*
 .editorconfig
 tsconfig.json
 tslint.json
+.nyc_output
+coverage

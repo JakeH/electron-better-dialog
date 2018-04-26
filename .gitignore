@@ -1,5 +1,7 @@
 # NPM package output
 dist/
+.nyc_output
+coverage
 
 # Logs
 logs
