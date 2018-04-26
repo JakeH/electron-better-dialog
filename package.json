@@ -20,6 +20,11 @@
   "bugs": {
     "url": "https://github.com/JakeH/electron-better-dialog/issues"
   },
+  "nyc": {
+    "exclude": [
+      "**/test.js"
+    ]
+  },
   "keywords": [
     "electron",
     "dialog",

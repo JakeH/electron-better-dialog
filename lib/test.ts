@@ -67,10 +67,10 @@ test('Electron is being passed an appropriate button labels', t => {
         label: 'Third'
     }];
 
-    showBetterMessageBox(null, {
+    showBetterMessageBox({
         message: 'Test',
         betterButtons
-    }, null);
+    });
 
     t.truthy(testContext.captured, 'Captured data exists');
 
@@ -91,7 +91,7 @@ test('Window property is passed', t => {
     showBetterMessageBox(<any>window, {
         message: 'Test',
         betterButtons
-    }, null);
+    });
 
     t.truthy(testContext.captured, 'Captured data exists');
 
@@ -105,10 +105,10 @@ test('Window property is optional', t => {
         label: 'First'
     }];
 
-    showBetterMessageBox(null, {
+    showBetterMessageBox({
         message: 'Test',
         betterButtons
-    }, null);
+    });
 
     t.truthy(testContext.captured, 'Captured data exists');
 
@@ -124,7 +124,7 @@ test('Callback is passed', t => {
         label: 'First'
     }];
 
-    showBetterMessageBox(null, {
+    showBetterMessageBox({
         message: 'Test',
         betterButtons
     }, callback);
@@ -143,7 +143,7 @@ test('Callback is optional', t => {
         label: 'First'
     }];
 
-    showBetterMessageBox(null, {
+    showBetterMessageBox({
         message: 'Test',
         betterButtons
     });
@@ -170,7 +170,7 @@ test('Sync call returns button', t => {
 
     testContext.behavior.clickIndex = 1;
 
-    const response = showBetterMessageBox(null, {
+    const response = showBetterMessageBox({
         message: 'Test',
         betterButtons
     });
@@ -197,7 +197,7 @@ test('Async call resolves with button', t => {
 
     testContext.behavior.clickIndex = 0;
 
-    showBetterMessageBox(null, {
+    showBetterMessageBox({
         message: 'Test',
         betterButtons
     }, response => {
@@ -219,7 +219,7 @@ test('Default and Cancel ids are correct', t => {
         label: 'Regular'
     }];
 
-    showBetterMessageBox(null, {
+    showBetterMessageBox({
         message: 'Test',
         betterButtons
     }, response => {
@@ -228,6 +228,17 @@ test('Default and Cancel ids are correct', t => {
         t.is(0, testContext.captured.options.defaultId, 'Default id');
         t.is(1, testContext.captured.options.cancelId, 'Cancel id');
 
+    });
+
+});
+
+test('Throws error when not using betterButtons', t => {
+
+    t.throws(() => {
+        showBetterMessageBox( {
+            message: 'Test',
+            betterButtons: null
+        });
     });
 
 });
