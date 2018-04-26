@@ -8,8 +8,8 @@
     "build": "tsc",
     "start": "tsc && electron ./dist/sample/index",
     "lint": "tslint --project tslint.json -t stylish",
-    "test": "npm run lint && npm run build && ava ./dist/test.js",
-    "cover": "nyc npm test && nyc report --reporter=text-lcov | coveralls"
+    "test:local": "npm run lint && npm run build && nyc ava ./dist/test.js && nyc report --reporter=text-lcov",
+    "test": "npm run lint && npm run build && nyc ava ./dist/test.js && nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
     "type": "git",
