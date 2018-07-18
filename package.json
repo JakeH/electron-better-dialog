@@ -1,6 +1,6 @@
 {
   "name": "electron-better-dialog",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Wrapper for the Electron showMessageBox function which works with button objects instead of indexes",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
