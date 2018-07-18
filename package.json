@@ -36,12 +36,12 @@
   "devDependencies": {
     "@types/mock-require": "^2.0.0",
     "ava": "^0.25.0",
-    "coveralls": "^3.0.0",
-    "electron": "^1.8.4",
+    "coveralls": "^3.0.2",
+    "electron": "^1.8.7",
     "istanbul": "^0.4.5",
     "mock-require": "^3.0.2",
-    "nyc": "^11.7.1",
-    "tslint": "^5.9.1",
-    "typescript": "^2.8.3"
+    "nyc": "^11.9.0",
+    "tslint": "^5.11.0",
+    "typescript": "^2.9.2"
   }
 }
